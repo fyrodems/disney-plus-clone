@@ -18,6 +18,7 @@ const Link = styled.a`
 
 const Image = styled.img`
     height: 20px;
+    margin-right: 5px;
 `
 
 const Text = styled.span`
