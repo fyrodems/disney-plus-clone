@@ -58,7 +58,7 @@ const Carousel = styled(Slider)`
     }
 
     .slick-active button::before {
-        color: white;
+        color: white !important;
     }
 
 `
