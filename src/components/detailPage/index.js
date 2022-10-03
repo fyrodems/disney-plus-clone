@@ -26,6 +26,16 @@ const Detail = () => {
             <img src='/images/group-icon.png' alt='trailer' />
             </GroupWatch>
         </Buttons>
+
+        <Subtitle>
+            2018 * 7m * Family, Fantasy, Kids, Animation
+        </Subtitle>
+
+        <Description>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales, mi vel mollis consequat, lacus turpis convallis risus, ac maximus metus massa in nunc. Suspendisse vitae malesuada lectus, sed dignissim nunc. Phasellus vel magna at diam rhoncus maximus eget eu arcu. 
+        </Description>
+
+
     </Container>
   )
 }
@@ -110,7 +120,7 @@ const Add = styled.button`
     border: 2px solid rgb(249, 249, 249);
     background: rgba(0, 0, 0, 0.6);
     cursor: pointer;
-    
+
      span {
         font-size: 30px;
         color: rgb(249, 249, 249);
@@ -119,3 +129,19 @@ const Add = styled.button`
 `
 
 const GroupWatch = styled(Add)``
+
+const Subtitle = styled.div`
+    color: rgb(249, 249, 249);
+    font-size: 15px;
+    min-height: 20px;
+    margin-top: 26px;
+`
+
+const Description = styled.p`
+    display: inline-block;
+    line-height: 1.4;
+    font-size: 20px;
+    //  padding:
+    margin-top: 16px;
+    color: rgb(249, 249, 249);
+`
