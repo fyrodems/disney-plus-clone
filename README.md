@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Firebase was used for data storage, authorization configuration and hosting.
 
+Demo: https://disneyplus-clone-8b8c8.web.app/
+
 ## Available features
 
 In the project you can:
