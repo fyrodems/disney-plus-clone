@@ -7,7 +7,7 @@ const Link = styled.a`
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding: 0 12px;
+  padding: 0 13px;
   cursor: pointer;
 
   &:hover span:after {

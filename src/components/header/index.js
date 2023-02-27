@@ -70,17 +70,17 @@ const Header = () => {
             <NavigationItem
               href={"/home"}
               src={"./images/home-icon.svg"}
-              text={"home"}
+              text={"strona główna"}
             />
             <NavigationItem
               href={"#"}
               src={"./images/search-icon.svg"}
-              text={"search"}
+              text={"wyszukaj"}
             />
             <NavigationItem
               href={"#"}
               src={"./images/watchlist-icon.svg"}
-              text={"watchlist"}
+              text={"moja lista"}
             />
             <NavigationItem
               href={"#"}
@@ -90,12 +90,12 @@ const Header = () => {
             <NavigationItem
               href={"#"}
               src={"./images/movie-icon.svg"}
-              text={"movies"}
+              text={"filmy"}
             />
             <NavigationItem
               href={"#"}
               src={"./images/series-icon.svg"}
-              text={"series"}
+              text={"seriale"}
             />
           </NavigationMenu>
 

@@ -45,7 +45,6 @@ const Viewers = () => {
 export default Viewers;
 
 const Container = styled.div`
-  margin-top: 40px;
   padding: 30px 0 26px;
   display: grid;
   grid-gap: 25px;
