@@ -17,7 +17,6 @@ const ImageSlider = () => {
   return (
     <Carousel {...settings}>
       <Slide>
-        {/* <img class="title" alt="" src="./images/slider/1-title.png"></img> */}
         <img className="image" src="./images/slider/1-img.jfif" alt="" />
       </Slide>
       <Slide>
@@ -42,16 +41,27 @@ const ImageSlider = () => {
 export default ImageSlider;
 
 const Carousel = styled(Slider)`
+  .slick-dots {
+    width: fit-content;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+  }
   margin-top: 20px;
 
   button {
     z-index: -1000;
   }
 
-  ul li button {
-    &:before {
-      font-size: 10px;
-      color: rgb(150, 158, 171);
+  ul li {
+    margin: 0;
+
+    button {
+      &:before {
+        font-size: 7px;
+        color: rgb(150, 158, 171);
+        opacity: 0.5;
+      }
     }
   }
 
