@@ -1,15 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { selectRecomended } from "../../features/movie/movieSlice";
 import { useSelector } from "react-redux";
+
+import { selectRecomended } from "../../features/movie/movieSlice";
+import { selectUserName } from "../../features/user/userSlice";
 
 const Recomended = () => {
   const movies = useSelector(selectRecomended);
+  const userName = useSelector(selectUserName);
 
   return (
     <Container>
-      <h4>Recomended for You name</h4>
+      <h4>Recomended for {userName.split(" ")[0]}</h4>
       <Content>
         {movies &&
           movies.map((movie, key) => (

@@ -39,4 +39,15 @@ const storage = firebase.storage();
 //   console.error("Error adding document: ", e);
 // }
 
+// Włączamy offline persistence
+db.enablePersistence().catch((err) => {
+  if (err.code === "failed-precondition") {
+    console.log(
+      "Persistence failed. Sprawdź, czy nie jest otwarta więcej niż jedna karta."
+    );
+  } else if (err.code === "unimplemented") {
+    console.log("Persistence is not available in this browser.");
+  }
+});
+
 export { db, auth, provider, storage, firebaseApp };
