@@ -39,7 +39,7 @@ const storage = firebase.storage();
 //   console.error("Error adding document: ", e);
 // }
 
-// Włączamy offline persistence
+// enable offline persistence
 db.enablePersistence().catch((err) => {
   if (err.code === "failed-precondition") {
     console.log(

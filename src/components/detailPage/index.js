@@ -1,11 +1,23 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { db } from "../../firebase";
 import { doc, getDoc } from "firebase/firestore";
 
 // COMPONENTS
 import Loader from "../common/Loader";
-import { Add, Background, Buttons, Container, Description, GroupWatch, LoaderContainer, Play, Subtitle, Title, Trailer } from "./styled";
+import {
+  Add,
+  Background,
+  Buttons,
+  Container,
+  Description,
+  GroupWatch,
+  LoaderContainer,
+  Play,
+  Subtitle,
+  Title,
+  Trailer,
+} from "./styled";
 
 const Detail = () => {
   const { id } = useParams();
@@ -64,4 +76,3 @@ const Detail = () => {
 };
 
 export default Detail;
-
