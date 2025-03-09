@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
+// DB
 import { db } from "../../firebase";
 import { doc, getDoc } from "firebase/firestore";
+
+// REDUX
+import { useDispatch, useSelector } from "react-redux";
+import { addToList, removeFromList } from "../../features/movie/myListSlice";
 
 // COMPONENTS
 import Loader from "../common/Loader";
@@ -20,9 +26,21 @@ import {
 } from "./styled";
 
 const Detail = () => {
+  const dispatch = useDispatch();
   const { id } = useParams();
 
   const [movie, setMovie] = useState({});
+
+  const myList = useSelector((state) => state.myList.myList);
+  const isAdded = myList.some((item) => item.title === movie.title);
+
+  const handleToggleList = () => {
+    if (isAdded) {
+      dispatch(removeFromList(movie.title));
+    } else {
+      dispatch(addToList(movie));
+    }
+  };
 
   useEffect(() => {
     (async () => {
@@ -60,8 +78,8 @@ const Detail = () => {
           <img src="../images/play-icon-white.png" alt="trailer" />
           <span>trailer</span>
         </Trailer>
-        <Add>
-          <span>+</span>
+        <Add onClick={handleToggleList}>
+          <span>{isAdded ? "✓" : "+"}</span>
         </Add>
         <GroupWatch>
           <img src="../images/group-icon.png" alt="trailer" />

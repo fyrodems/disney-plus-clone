@@ -12,10 +12,10 @@ In the project you can:
 
 - Log in using your Google account
 - Log out to see login page
-- Pick a movie (connect do Firestore DB)
--
+- Works offline
+- Pick a movie (connect to Firestore DB)
+- Add movie to list
 
 ## Future features
 
-- Add movie to list
 - Trailers

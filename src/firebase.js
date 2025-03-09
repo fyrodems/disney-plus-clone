@@ -3,11 +3,6 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import "firebase/compat/storage";
 
-// import { collection, addDoc, /*getDocs*/ } from "firebase/firestore";
-
-// import { initializeApp } from "firebase/app";
-// import { getFirestore } from "firebase/firestore";
-
 const firebaseConfig = {
   apiKey: "AIzaSyBqUKqZ0L2fC-jAT6G_EE0W-ja7hO-_wy4",
   authDomain: "disneyplus-clone-8b8c8.firebaseapp.com",
@@ -24,20 +19,6 @@ const db = firebaseApp.firestore();
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 const storage = firebase.storage();
-
-// const app = initializeApp(firebaseConfig);
-// const db = getFirestore(app);
-
-// try {
-//   const docRef =  addDoc(collection(db, "movies"), {
-//       backgroundImg: '',
-//       type: 'series'
-//   });
-
-//   console.log("Document written with ID: ", docRef.id);
-// } catch (e) {
-//   console.error("Error adding document: ", e);
-// }
 
 // enable offline persistence
 db.enablePersistence().catch((err) => {

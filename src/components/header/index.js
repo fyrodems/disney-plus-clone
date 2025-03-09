@@ -94,7 +94,7 @@ const Header = () => {
               text={"wyszukaj"}
             />
             <NavigationItem
-              href={"#"}
+              href={"/myList"}
               src={"./images/watchlist-icon.svg"}
               text={"moja lista"}
             />

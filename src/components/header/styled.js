@@ -104,7 +104,7 @@ export const SignOut = styled.div`
 
 /** nav item */
 
-export const Link = styled.a`
+export const Link = styled.span`
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
