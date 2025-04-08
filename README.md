@@ -6,6 +6,8 @@ Firebase was used for data storage, authorization configuration and hosting.
 
 Demo: https://disneyplus-clone-8b8c8.web.app/
 
+Prototype: https://www.figma.com/proto/sJWPBqY2cncOp7AwqxkFvH/Untitled?node-id=0-1&t=Wxy6OcGVJg8IZtlQ-1
+
 ## Available features
 
 In the project you can:

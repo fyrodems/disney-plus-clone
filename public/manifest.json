@@ -20,6 +20,12 @@
       "type": "image/png",
       "sizes": "1595x1124",
       "form_factor": "wide"
+    },
+    {
+      "src": "mobile-screenshot1.png",
+      "type": "image/png",
+      "sizes": "430x930",
+      "form_factor": "narrow"
     }
   ],
   "start_url": "/",
