@@ -48,8 +48,7 @@ const Detail = () => {
       const docSnap = await getDoc(singleDoc);
 
       if (docSnap.exists) {
-        setMovie(docSnap.data());
-        document.title = `Disney+ clone - ${docSnap.data().title}`;
+        setMovie({ ...docSnap.data(), id });
       }
     })();
   }, [id]);
