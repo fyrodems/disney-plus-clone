@@ -35,6 +35,18 @@ const Content = styled.div`
   grid-gap: 25px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
+  &:before {
+    background: url("./images/home-background.png") center center / cover
+      no-repeat fixed;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
