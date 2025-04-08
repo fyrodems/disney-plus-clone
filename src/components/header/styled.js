@@ -9,7 +9,7 @@ export const NavigationBar = styled.nav`
   overflow-x: hidden;
   justify-content: space-between;
 `;
-export const Logo = styled.a`
+export const Logo = styled.span`
   width: 80px;
   padding: 0;
   margin-top: 4px;

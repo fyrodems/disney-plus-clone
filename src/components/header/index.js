@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { auth, provider } from "../../firebase";
 
@@ -72,10 +72,11 @@ const Header = () => {
 
   return (
     <NavigationBar>
-      <Logo href="/home">
-        <img alt="disney+" src="../images/logo.svg" />
-      </Logo>
-
+      <Link to={"/home"}>
+        <Logo>
+          <img alt="disney+" src="../images/logo.svg" />
+        </Logo>
+      </Link>
       {!userName && !userImg ? (
         <LoginContainer>
           <Login onClick={signIn}>login</Login>
@@ -83,11 +84,6 @@ const Header = () => {
       ) : (
         <>
           <NavigationMenu>
-            <NavigationItem
-              href={"/home"}
-              src={"./images/home-icon.svg"}
-              text={"strona główna"}
-            />
             <NavigationItem
               href={"#"}
               src={"./images/search-icon.svg"}

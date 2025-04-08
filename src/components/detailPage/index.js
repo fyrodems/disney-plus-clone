@@ -77,12 +77,14 @@ const Detail = () => {
           <img src="../images/play-icon-white.png" alt="trailer" />
           <span>trailer</span>
         </Trailer>
-        <Add onClick={handleToggleList}>
-          <span>{isAdded ? "✓" : "+"}</span>
-        </Add>
-        <GroupWatch>
-          <img src="../images/group-icon.png" alt="trailer" />
-        </GroupWatch>
+        <Buttons>
+          <Add onClick={handleToggleList}>
+            <span>{isAdded ? "✓" : "+"}</span>
+          </Add>
+          <GroupWatch>
+            <img src="../images/group-icon.png" alt="trailer" />
+          </GroupWatch>
+        </Buttons>
       </Buttons>
 
       <Subtitle>{movie.subTitle}</Subtitle>

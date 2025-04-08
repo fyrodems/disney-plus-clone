@@ -8,19 +8,19 @@ export const Container = styled.div`
 `;
 
 export const Background = styled.div`
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: .8;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
 `;
 
 export const Title = styled.div`
@@ -42,6 +42,7 @@ export const Buttons = styled.div`
   display: flex;
   gap: 22px;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const Play = styled.button`
